@@ -1,0 +1,10 @@
+<VirtualHost *:80>
+  ServerName vagrant-test.local
+  DocumentRoot /vagrant/application/webroot
+  <Directory /vagrant/application/webroot>
+    DirectoryIndex index.html
+    AllowOverride All
+    Order allow,deny
+    Allow from all
+  </Directory>
+</VirtualHost>
