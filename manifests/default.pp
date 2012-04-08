@@ -3,16 +3,11 @@ Exec {
   path => ["/usr/bin", "/bin", "/usr/sbin", "/sbin", "/usr/local/bin", "/usr/local/sbin"]
 }
 
-class lucid32 {
-  package { "php5":
-    ensure => present,
-  }
-
-  package { "libapache2-mod-php5":
-    ensure => present,
-  }
-}
-
 include bootstrap
+include other
 include apache
-include lucid32
+include php
+include php::pear
+include php::pecl
+include mysql
+

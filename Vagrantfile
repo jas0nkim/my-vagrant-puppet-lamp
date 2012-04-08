@@ -2,7 +2,7 @@ Vagrant::Config.run do |config|
   # Enable the Puppet provisioner, with will look in manifests
   config.vm.provision :puppet do |puppet|
     puppet.manifests_path = "manifests"
-    puppet.manifest_file = "lucid32.pp"
+    puppet.manifest_file = "default.pp"
     puppet.module_path = "modules"
   end
 
