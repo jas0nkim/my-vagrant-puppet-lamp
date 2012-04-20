@@ -3,10 +3,10 @@ class mysql {
 
   package { "mysql-server":
     ensure => present,
+    require => Exec["apt-get update"]
   }
 
   service { "mysql":
-    enable => true,
     ensure => running,
     require => Package["mysql-server"],
   }

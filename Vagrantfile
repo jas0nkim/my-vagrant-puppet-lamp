@@ -1,4 +1,5 @@
 Vagrant::Config.run do |config|
+
   # Enable the Puppet provisioner, with will look in manifests
   config.vm.provision :puppet do |puppet|
     puppet.manifests_path = "manifests"
@@ -7,7 +8,7 @@ Vagrant::Config.run do |config|
   end
 
   # Every Vagrant virtual environment requires a box to build off of.
-  config.vm.box = "lucid32"
+  config.vm.box = "squeeze32"
     # (everything else is commented)
     # ...
 
