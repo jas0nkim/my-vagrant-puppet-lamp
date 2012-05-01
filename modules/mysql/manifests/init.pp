@@ -1,5 +1,5 @@
 class mysql {
-  $mysqlpw = "1234"
+  $mysqlpw = "qwe123"
 
   package { "mysql-server":
     ensure => present,
