@@ -1,0 +1,18 @@
+[Initial VM run]
+
+Please create manifest/vagrant_webroot before you create VM instance. 
+Refer manifest/vagrant_webroot.sample
+
+[Package included]
+
+apache2 - rewrite mode enabled, having virtual host with config - refer manifest/vagrant_webroot.sample
+php5
+php5-cli
+php5-mysql
+php-pear - installed packages: phpunit and its dependencies
+php5-dev
+php5-gd
+mysql-server
+curl
+vim
+
